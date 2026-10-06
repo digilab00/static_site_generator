@@ -34,7 +34,7 @@ class LeafNode(HTMLNode):
         else:
             string = ' '
             for key, value in self.props.items():
-                string += f'{key}={value} '
+                string += f'{key}="{value}" '
             return f'<{self.tag}{string}>{self.value}</{self.tag}>'
 
 class ParentNode(HTMLNode):
