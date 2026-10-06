@@ -54,8 +54,8 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, bas
             
 
 def main():
-    if sys.argv[0]:
-        basepath = sys.argv[0]
+    if len(sys.argv) > 1:
+        basepath = sys.argv[1]
     else:
         basepath = '/'
     clean_dir('docs')
